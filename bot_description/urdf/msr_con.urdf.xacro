@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="msr_con" xmlns:xacro="http://ros.org/wiki/xacro">
+  
+  <xacro:include filename="$(find bot_description)/urdf/msr_con.gazebo.xacro"/>
+  
+  <xacro:property name="camera_link" value="0.05" /> <!-- Size of square 'camera' box -->
+
+  <link name="dummy">
+  </link>
+  <link name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.45421284026292E-18 6.69027950659659E-18 0.095"
+        rpy="0 0 0" />
+      <mass
+        value="0.734911232956305" />
+      <inertia
+        ixx="0.0165248957618195"
+        ixy="-4.33179877395614E-07"
+        ixz="-1.49028518302924E-20"
+        iyy="0.0167271926720354"
+        iyz="2.44102998803428E-20"
+        izz="0.0332509860670055" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="front_left">
+    <inertial>
+      <origin
+        xyz="-2.77555756156289E-17 -5.55111512312578E-17 5.25062351154071E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.628243917892436" />
+      <inertia
+        ixx="0.000786474602916463"
+        ixy="-1.67633321012694E-20"
+        ixz="5.86188351982008E-20"
+        iyy="0.000786474602916463"
+        iyz="3.17299134096198E-18"
+        izz="0.00129926747138072" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot_description/meshes/front_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot_description/meshes/front_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="front_right">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 -2.77555756156289E-17 5.25062351154348E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.628243917892436" />
+      <inertia
+        ixx="0.000786474602916463"
+        ixy="1.76260556307686E-20"
+        ixz="1.00549063349698E-19"
+        iyy="0.000786474602916463"
+        iyz="1.66410215433059E-18"
+        izz="0.00129926747138072" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot_description/meshes/front_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot_description/meshes/front_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="back_left">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 -2.77555756156289E-17 5.25062351154071E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.628243917892436" />
+      <inertia
+        ixx="0.000786474602916463"
+        ixy="1.66599345246999E-20"
+        ixz="-3.17301516583673E-18"
+        iyy="0.000786474602916463"
+        iyz="5.86254458607071E-20"
+        izz="0.00129926747138072" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot_description/meshes/back_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot_description/meshes/back_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="back_right">
+    <inertial>
+      <origin
+        xyz="-2.77555756156289E-17 5.55111512312578E-17 -5.25062351154348E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.628243917892436" />
+      <inertia
+        ixx="0.000786474602916463"
+        ixy="1.66808862800447E-20"
+        ixz="-5.8599200809644E-20"
+        iyy="0.000786474602916463"
+        iyz="-1.37011113349761E-19"
+        izz="0.00129926747138072" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot_description/meshes/back_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot_description/meshes/back_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="my_lidar">
+  </link>
+  <link name="my_imu">
+  </link>
+  <link name="my_camera">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+    <box size="${camera_link+0.02} ${camera_link} ${camera_link-0.01}"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+    <box size="${camera_link} ${camera_link} ${camera_link}"/>
+      </geometry>
+    </visual>
+
+    <inertial>
+      <mass value="1e-5" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+  
+
+  <joint name="dummy_joint" type="fixed">
+    <parent link="dummy"/>
+    <child link="base_link"/>
+  </joint>
+  <joint name="front_left_joint"
+    type="continuous">
+    <origin
+      xyz="-0.151 0.14911 0.0635"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_left" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="50"
+      velocity="10" />
+  </joint>
+  <joint name="front_right_joint"
+    type="continuous">
+    <origin
+      xyz="0.151 0.14911 0.0635"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_right" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="50"
+      velocity="10" />
+  </joint>
+  <joint name="back_left_joint"
+    type="continuous">
+    <origin
+      xyz="-0.151 -0.14911 0.0635"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_left" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="50"
+      velocity="10" />
+  </joint>
+  <joint name="back_right_joint"
+    type="continuous">
+    <origin
+      xyz="0.151 -0.149113167332488 0.0635000000000007"
+      rpy="0 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_right" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="50"
+      velocity="10" />
+  </joint>
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="my_lidar"/>
+    <origin xyz="0 0 0.2" rpy="0 0 0"/>
+  </joint>
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="my_imu"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+  <joint name="camera_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="my_camera"/>
+    <origin xyz="0 0.31 0.15" rpy="0 0 1.5707"/>
+  </joint>
+
+</robot>
